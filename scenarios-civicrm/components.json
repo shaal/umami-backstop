@@ -1,0 +1,9 @@
+{
+  "scenarios": [
+    {
+      "label": "Component - CRM Error",
+      "url": "{url}/civicrm/group/add?reset=1",
+      "onReadyScript": "components/crm-error.js"
+    }
+  ]
+}

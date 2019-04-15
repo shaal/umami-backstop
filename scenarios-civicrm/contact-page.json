@@ -1,0 +1,38 @@
+{
+  "scenarios": [
+    {
+      "label": "Contact Summary",
+      "url": "{url}/index.php?q=civicrm/contact/view&reset=1&cid=2"
+    },
+    {
+      "label": "Contributions",
+      "url": "{url}/index.php?q=civicrm/contact/view&reset=1&cid=2&selectedChild=contribute",
+      "onReadyScript": "contact-page/show-contributions.js"
+    },
+    {
+      "label": "Record Contribution",
+      "url": "{url}/index.php?q=civicrm/contact/view&reset=1&cid=2&selectedChild=contribute",
+      "onReadyScript": "contact-page/record-contribution.js"
+    },
+    {
+      "label": "Memberships",
+      "url": "{url}/index.php?q=civicrm/contact/view&reset=1&cid=2&selectedChild=member",
+      "onReadyScript": "contact-page/show-memberships.js"
+    },
+    {
+      "label": "Memberships - Add Membership",
+      "url": "{url}/index.php?q=civicrm/contact/view&reset=1&cid=2&selectedChild=member",
+      "onReadyScript": "contact-page/record-membership.js"
+    },
+    {
+      "label": "Events",
+      "url": "{url}/index.php?q=civicrm/contact/view&reset=1&cid=2&selectedChild=participant",
+      "onReadyScript": "contact-page/show-events.js"
+    },
+    {
+      "label": "Events - Add Membership",
+      "url": "{url}/index.php?q=civicrm/contact/view&reset=1&cid=2&selectedChild=participant",
+      "onReadyScript": "contact-page/record-event.js"
+    }
+  ]
+}

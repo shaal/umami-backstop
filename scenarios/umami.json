@@ -1,0 +1,53 @@
+{
+  "scenarios": [
+    {
+      "label": "Umami Homepage",
+      "url": "{url}/"
+    },
+    {
+      "label": "Umami Articles",
+      "url": "{url}/en/articles"
+    },
+    {
+      "label": "Umami Recipes",
+      "url": "{url}/en/recipes"
+    },
+    {
+      "label": "Umami Articles",
+      "url": "{url}/en/articles"
+    },
+    {
+      "label": "Umami recipe - Brownies",
+      "url": "{url}/en/recipes/vegan-chocolate-and-nut-brownies"
+    },
+    {
+      "label": "Umami article - grow herbs",
+      "url": "{url}/en/articles/give-it-a-go-and-grow-your-own-herbs"
+    },
+    {
+      "label": "Umami search for 'chocolate'",
+      "url": "{url}/en/search/node?keys=chocolate"
+    },
+    {
+      "label": "Umami login",
+      "url": "{url}/en/user/login"
+    },
+    {
+      "label": "Umami Spanish homepage",
+      "url": "{url}/es"
+    },
+    {
+      "label": "Umami about page",
+      "url": "{url}/en/about-umami"
+    },
+    {
+      "label": "Umami 404 page",
+      "url": "{url}/404"
+    },
+    {
+      "label": "Umami System Status",
+      "url": "{url}/en/admin/structure/types/manage/recipe/display/full/layout",
+      "onReadyScript": "admin/admin.js"
+    }
+  ]
+}

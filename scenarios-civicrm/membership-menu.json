@@ -1,0 +1,59 @@
+{
+  "scenarios": [
+    {
+      "label": "Membership - Dashboard",
+      "url": "{url}/civicrm/member?reset=1"
+    },
+    {
+      "label": "Membership - Find Memberships",
+      "url": "{url}/civicrm/member/search?reset=1"
+    },
+    {
+      "label": "Find Memberships - View Modal - Results ",
+      "url": "{url}/civicrm/member/search?reset=1",
+      "selectors": [".ui-dialog"],
+      "onReadyScript": "membership/find-memberships-view.js"
+    },
+    {
+      "label": "Find Memberships - Edit Modal - Results ",
+      "url": "{url}/civicrm/member/search?reset=1",
+      "selectors": [".ui-dialog"],
+      "onReadyScript": "membership/find-memberships-edit.js"
+    },
+    {
+      "label": "Find Memberships - Delete Modal - Results ",
+      "url": "{url}/civicrm/member/search?reset=1",
+      "selectors": [".ui-dialog"],
+      "onReadyScript": "membership/find-memberships-delete.js"
+    },
+    {
+      "label": "Find Memberships - Renew Modal - Results ",
+      "url": "{url}/civicrm/member/search?reset=1",
+      "selectors": [".ui-dialog"],
+      "onReadyScript": "membership/find-memberships-renew.js"
+    },
+    {
+      "label": "Find Memberships - Renew Credit Card Modal - Results ",
+      "url": "{url}/civicrm/member/search?reset=1",
+      "selectors": [".ui-dialog"],
+      "onReadyScript": "membership/find-memberships-renew-cc.js"
+    },  
+    {
+      "label": "Membership - New Membership",
+      "url": "{url}/civicrm/member/add?reset=1&action=add&context=standalone"
+    },
+    {
+      "label": "Membership - Find Memberships - Results",
+      "url": "{url}/civicrm/member/search?reset=1",
+      "onReadyScript": "membership/search-result.js"
+    },
+    {
+      "label": "Membership - Import Memberships",
+      "url": "{url}/civicrm/member/import?reset=1"
+    },
+    {
+      "label": "Membership Reports",
+      "url": "{url}/civicrm/report/list?compid=3&reset=1"
+    }
+  ]
+}

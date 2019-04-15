@@ -1,0 +1,47 @@
+{
+  "viewports": [
+    {
+      "label": "Mobile",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "Tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "HD",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "label": "HD+",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "label": "UHD",
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "onBeforeScript": "onBefore.js",
+  "onReadyScript": "onReady.js",
+  "paths": {
+    "bitmaps_reference": "backstop_data/screenshots/{group}/reference",
+    "bitmaps_test": "backstop_data/screenshots/{group}/test",
+    "engine_scripts": "backstop_data/engine_scripts/puppet",
+    "html_report": "backstop_data/html_report/{group}",
+    "ci_report": "backstop_data/ci_report/{group}"
+  },
+  "engine": "puppeteer",
+  "report": ["CLI", "browser"],
+  "asyncCaptureLimit": 2,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "engineOptions": {
+    "waitTimeout": 120000
+  }
+}
